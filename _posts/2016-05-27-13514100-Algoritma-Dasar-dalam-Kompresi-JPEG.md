@@ -11,12 +11,12 @@ categories: tugas
 ### Daftar isi
 
 > * [Bagaimana solusinya?](#bagaimana_solusi)
-> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[Apa itu kompresi file?](#apa_itu_kompresi)
-> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[Apa itu kompresi JPEG?](#apa_itu_jpeg)
+> * >[Apa itu kompresi file?](#apa_itu_kompresi)
+> * >[Apa itu kompresi JPEG?](#apa_itu_jpeg)
 > * [Algoritma JPEG](#algoritma_jpeg)
-> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[_Discrete Cosine Transform (DCT)_](#dct)
-> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[Kuantisasi](#kuantisasi)
-> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[_Entropi Encoding_](#entropi_encoding)
+> * >[_Discrete Cosine Transform (DCT)_](#dct)
+> * >[Kuantisasi](#kuantisasi)
+> * >[_Entropi Encoding_](#entropi_encoding)
 > * [Kesimpulan](#kesimpulan)
 > * [Referensi](#referensi)
 
@@ -99,7 +99,7 @@ Transformasi DCT dalam bentuk dua dimensi direpresentasikan dalam persamaan seba
 </div>
 </p>
 
-_Dimana u,v=0,1,2,3,……………,N-1_
+_Dimana u,v=0,1,2,3,â€¦â€¦â€¦â€¦â€¦,N-1_
 
  Inverse 2D-DCT tranformasi diberikan persamaan sebagai berikut :
 
@@ -111,7 +111,7 @@ _Dimana u,v=0,1,2,3,……………,N-1_
 
 _Dimana :_
 _D(u)=(1/N) ^1/2 untuk u=0_
-_D(u)=2(/N)^1/2 untuk u=1,2,3…….,(N-1)_
+_D(u)=2(/N)^1/2 untuk u=1,2,3â€¦â€¦.,(N-1)_
 
 #### <a name="kuantisasi"></a> **_Kuantisasi_**
 
