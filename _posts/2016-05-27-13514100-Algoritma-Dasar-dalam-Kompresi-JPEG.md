@@ -6,25 +6,37 @@ summary:    Silakan klik pada judul untuk detailnya
 categories: tugas
 ---
 
+---
+
+---
+
 **Oleh: Albertus Kelvin / 13514100**
+
+---
+
+---
 
 ### Daftar isi
 
 > * [Bagaimana solusinya?](#bagaimana_solusi)
-> * >[Apa itu kompresi file?](#apa_itu_kompresi)
-> * >[Apa itu kompresi JPEG?](#apa_itu_jpeg)
+> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[Apa itu kompresi file?](#apa_itu_kompresi)
+> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[Apa itu kompresi JPEG?](#apa_itu_jpeg)
 > * [Algoritma JPEG](#algoritma_jpeg)
-> * >[_Discrete Cosine Transform (DCT)_](#dct)
-> * >[Kuantisasi](#kuantisasi)
-> * >[_Entropi Encoding_](#entropi_encoding)
+> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[_Discrete Cosine Transform (DCT)_](#dct)
+> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[Kuantisasi](#kuantisasi)
+> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>[_Entropi Encoding_](#entropi_encoding)
 > * [Kesimpulan](#kesimpulan)
 > * [Referensi](#referensi)
+
+---
 
 Pernahkah Anda mengalami kesulitan saat ingin mengirim file? 
 
 Kesulitan seperti apakah itu? 
 
 Umumnya, bentuk masalah yang sering dihadapi adalah ukuran file yang melebihi batas ukuran yang diperbolehkan oleh suatu sistem. Salah satu contoh kasusnya adalah saat Anda ingin mengirim sebuah file gambar untuk dijadikan pengganti foto profil dari suatu media sosial, namun proses tersebut tidak berhasil dikarenakan sistem hanya mengijinkan file gambar dengan suatu ukuran maksimal tertentu. 
+
+---
 
 ### <a name="bagaimana_solusi"></a> **Lalu, bagaimana solusinya?**
 
@@ -58,6 +70,8 @@ Berdasarkan jenis teknik kompresi yang diaplikasikan, algoritma kompresi JPEG in
 
 > * Algoritma ini memanfaatkan fakta bahwa manusia tidak dapat melihat warna pada frekuensi tinggi.
 > * Semua ruang lingkup warna dengan frekuensi tinggi tersebut akan dijadikan detil data yang dihilangkan selama proses pemampatan (tidak menjadi masalah dikarenakan adanya fakta pada poin pertama).
+
+---
 
 ### <a name="algoritma_jpeg"></a> **Algoritma JPEG**
 
@@ -99,7 +113,7 @@ Transformasi DCT dalam bentuk dua dimensi direpresentasikan dalam persamaan seba
 </div>
 </p>
 
-_Dimana u,v=0,1,2,3,……………,N-1_
+_Dimana u,v=0,1,2,3,�����,N-1_
 
  Inverse 2D-DCT tranformasi diberikan persamaan sebagai berikut :
 
@@ -111,7 +125,7 @@ _Dimana u,v=0,1,2,3,……………,N-1_
 
 _Dimana :_
 _D(u)=(1/N) ^1/2 untuk u=0_
-_D(u)=2(/N)^1/2 untuk u=1,2,3…….,(N-1)_
+_D(u)=2(/N)^1/2 untuk u=1,2,3��.,(N-1)_
 
 #### <a name="kuantisasi"></a> **_Kuantisasi_**
 
@@ -145,11 +159,15 @@ Prosedur _zig-zag scan_ yang diimplementasikan dapat berbentuk seperti di bawah 
 
 Akhir dari algoritma JPEG ini adalah menempatkan unsur-unsur kotak kecil koefisien dalam urutan yang wajar dari frekuensi yang terurut membesar. Karena frekuensi yang lebih tinggi lebih cenderung bernilai nol setelah proses kuantisasi, kelompok frekuensi tinggi ini lebih cenderung masuk ke dalam kelompok frekuensi dengan nilai nol pada hasil akhir dari vektor.
 
+---
+
 ### <a name="kesimpulan"></a> **Kesimpulan**
 
 > Algoritma JPEG menggunakan nilai ukuran 8x8 pixels sebagai ukuran standar sebuah kotak kecil (blok). Namun, ukuran blok yang lain dapat saja memberikan hasil yang lebih baik untuk beberapa gambar tertentu. Hal ini menunjukkan pemilihan ukuran blok menentukan kualitas gambar hasil kompresi.
 
 > Selain itu, berdasarkan prosedur utama dalam algoritma JPEG yang mengimplementasikan teknik matriks DCT, kuantisasi, dan _Entropy Encoding_ dapat dilihat bahwa dengan membuat beberapa variasi nilai yang dijadikan sebagai pengali matriks, dapat mengubah kualitas dan ukuran file gambar.
+
+---
 
 ### <a name="referensi"></a> **Referensi**
 
