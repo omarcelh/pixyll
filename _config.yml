@@ -6,6 +6,7 @@ description: "Tugas 2 Ca-IRK 2014"
 baseurl:     "/pixyll"
 url:         "http://omarcelh.github.io"
 date_format: "%b %-d, %Y"
+encoding: UTF-8
 
 # Google analytics
 # Google services
